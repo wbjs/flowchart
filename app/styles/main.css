@@ -1,0 +1,179 @@
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.hero-unit {
+  margin: 0px auto 0 auto;
+  width: 1000px;
+  height: auto;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  border-radius: 6px;
+  padding: 60px;
+}
+
+.hero-unit h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/**/
+      label{
+        font-size:14px;
+        width:80px;
+        float:left;
+        clear:left;
+      }
+      #body{
+        text-align:center;
+      }
+      #box{
+        width:960px;
+        margin:0 auto;
+      }
+      #topbar{
+        width:100%;
+        height:60px;
+        float:left;
+        clear:left;
+        background:#ccc;
+      }
+      #tools_cp{
+        width:100px;
+        height:520px;
+        float:left;
+        clear:left;
+        background:#555;
+      }
+      #canvasBox{
+        width:660px;
+        height:520px;
+        float:left;
+        clear:none;
+        background:#fff;
+        position:relative;
+      }
+      #myCanvas{
+        width:660px;
+        height:520px;
+        float:left;
+        clear:none;
+        background:#fff;
+        position:absolute;
+        top:0;
+        left:0;
+      }
+      #pcp{
+        width:200px;
+        height:520px;
+        float:left;
+        clear:none;
+        background:#555;
+      }
+      #footer{
+        width:100%;
+        height:30px;
+        line-height:30px;
+        background:#ccc;
+        float:left;
+        clear:left;
+        text-align:center;
+        font-size:14px;
+      }
+      #help{
+        width:300px;
+        height:auto;
+        padding:20px;
+        display:none;
+        position:absolute;
+        top:100px;
+        left:300px;
+        background:#ccc;
+      }
+      #selectFiles{
+        width:300px;
+        height:auto;
+        padding:20px;
+        display:none;
+        position:absolute;
+        top:100px;
+        left:300px;
+        background:#ccc;
+      }
+      #setTitleCP{
+        width:200px;
+        height:60;
+        padding:20px;
+        display:none;
+        position:absolute;
+        top:100px;
+        left:300px;
+        background:#ccc;
+        border-radius:15px;
+        -moz-opacity:0.9;
+        opacity:0.9;
+      }
+      #obj_1,#obj_2,#obj_3,#obj_4{
+        width:70px;
+        height:35px;
+        text-align:center;
+        line-height:35px;
+        border:none;
+        margin:20px 10px 0px 15px;
+        cursor:pointer;
+      }
+      #topbar button{
+        cursor:pointer;
+        color:#fff;
+        float:left;clear:none;
+        border:none;
+        margin:10px 0px 0px 10px;
+        width:90px;
+        height:40px;
+        line-height:40px;
+        display:block;
+        text-align:center;
+        background: linear-gradient(to bottom, #0088cc, #0044cc);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        font-size:18px;
+      }#topbar button:hover{
+        cursor:pointer;
+        color:#fff;
+        float:left;clear:none;
+        border:none;
+        margin:10px 0px 0px 10px;
+        width:90px;
+        height:40px;
+        line-height:40px;
+        display:block;
+        text-align:center;
+        background: linear-gradient(to bottom, #0022cc, #0044cc);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        font-size:18px;
+      }

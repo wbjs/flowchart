@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>flowchart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="hero-unit">
+    <div id="box">
+      <div id="topbar">
+        <button onclick="save();">保存数据</button>
+        <button onclick="openFile();">打开数据</button>
+        <button onclick="savetoimage();">导出</button>
+        <button onclick="clearAll();">清除全部</button>
+        <button onclick="big();">整体放大</button>
+        <button onclick="small();">整体缩小</button>
+        <button id="showHelp">帮助</button>
+      </div>
+      <div id="tools_cp">
+        <div id="obj_1">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+          <polygon points="0 0,0 35,70 35,70 0"
+          style="fill:#fff;
+          stroke:#f00;stroke-width:2"/>
+        </svg>
+        </div>
+        <div id="obj_2">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+          <polygon points="35 0,0 17.5,35 35,70 17.5"
+          style="fill:#fff;
+          stroke:#f00;stroke-width:2"/>
+        </svg>
+        </div>
+        <div id="obj_3">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+          <polygon points="17.5 0,0 35,52.5 35,70 0"
+          style="fill:#fff;
+          stroke:#f00;stroke-width:2"/>
+        </svg>
+        </div>
+        <div id="obj_4">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+          <polygon points="35 0,0 35,70 35"
+          style="fill:#fff;
+          stroke:#f00;stroke-width:2"/>
+        </svg>
+        </div>
+      </div>
+      <div id="canvasBox"><canvas id="myCanvas" ondrop="drop(event)" ondragover="allowDrop(event)">your browser does not support the canvas tag</canvas></div>
+      <div id="pcp">
+        <p><label>文字</label><input id="text" value="" placeholder="text" onchange="setText(this.value);" /></p>
+        <p><label>x轴</label><input id="left" value="" placeholder="left" onchange="setLeft(this.value);" /></p>
+        <p><label>y轴</label><input id="top" value="" placeholder="top" onchange="setTop(this.value);" /></p>
+        <p><label>宽度</label><input id="width" value="" placeholder="width" onchange="setWidth(this.value);" /></p>
+        <p><label>高度</label><input id="height" value="" placeholder="height" onchange="setHeight(this.value);" /></p>
+      </div>
+      <div id="footer">www.wbjs.org</div>
+      <div id="help">
+        <p>拖拽左侧工具栏到画布，生成相应的图形。</p>
+        <p>鼠标位于图形上，鼠标呈现拖拽状态时，可拖拽图形，图形移动。</p>
+        <p>鼠标位于图形上的节点，拖拽节点，图形拉伸。</p>
+        <p>鼠标位于图形上，单击一次，按delete键删除图形。</p>
+        <p>鼠标位于图形上，双击，出现编辑框，输入文字，用来更改图形的文字。</p>
+        <p><button id="closeHelp">关闭帮助</button></p>
+      </div>
+      <div id="selectFiles"><div>
+      <div id="setTitleCP">
+        <input type="text" id="title" />
+        <button id="btnTitle">确定</button>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+            <script src="scripts/codetyphon.js"></script>
+    <script src="scripts/tools.js"></script>
+    <script src="scripts/tools2.js"></script>
+    <script src="scripts/tools3.js"></script>
+    <script src="scripts/tools4.js"></script>
+    <script src="scripts/line.js"></script>
+    <script src="scripts/functions.js"></script>
+    <script src="scripts/event.js"></script>
+    <script src="scripts/event_mouse_down.js"></script>
+    <script src="scripts/event_mouse_up.js"></script>
+    <script src="scripts/event_mouse_move.js"></script>
+    <script src="scripts/bind.js"></script>
+    <script src="scripts/init.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
